@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gérer les Tâches</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gérer les Tâches</h1>
+    </header>
+    <main>
+        <section id="tasks">
+            <h2>Liste des Tâches</h2>
+            <div id="tasks-list"></div>
+            <form id="add-task-form">
+                <label for="title">Titre :</label>
+                <input type="text" id="title" name="title" required>
+                <label for="description">Description :</label>
+                <input type="text" id="description" name="description">
+                <label for="due_date">Date d'échéance :</label>
+                <input type="date" id="due_date" name="due_date">
+                <button type="submit">Ajouter la tâche</button>
+            </form>
+        </section>
+        <section id="tasks-details">
+            <!-- Détails de la tâche ou options de modification -->
+        </section>
+    </main>
+    <script src="tasks.js"></script>
+</body>
+</html>
